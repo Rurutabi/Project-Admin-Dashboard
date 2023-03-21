@@ -1,3 +1,30 @@
 * {
-  background-color: wheat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+i {
+  font-size: 32px;
+}
+
+.container {
+  background-color: #ebebd3;
+  height: 100vh;
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 4fr;
+}
+
+/*Sidebar css*/
+
+.sidebar {
+  background-color: #db3069;
+  display: grid;
+  padding: 12px;
+  grid-row: 1/5;
 }

@@ -8,8 +8,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+img {
+  width: 50px;
+  height: 50px;
+}
+
 i {
   font-size: 24px;
+}
+
+.dashboard-text {
+  font-size: 1.6rem;
 }
 
 .container {
@@ -17,7 +26,7 @@ i {
   height: 100vh;
   display: grid;
   gap: 4px;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 300px 4fr;
 }
 
 /*Sidebar css*/
@@ -36,17 +45,74 @@ i {
 
 .dashboard-sidebar {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
+  gap: 16px;
   align-items: center;
 }
 
 .top-sidebar {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 6fr;
+  gap: 12px;
   grid-template-rows: repeat(auto-fit, 50px);
   align-items: center;
 }
 
+.top-sidebar:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.07);
+}
+
 .dashboard {
   font-size: 48px;
+}
+
+/*Header*/
+.header {
+  display: grid;
+  grid-template-row: 1fr 1fr;
+}
+
+/* Style the search bar container */
+.search-container {
+  padding: 16px;
+  width: 60%;
+}
+
+.search-bar {
+  width: 50%;
+}
+
+/* Style the input field */
+.search-container input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Style the submit button */
+.search-container button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Change the hover and focus styles of the input field */
+.search-container input[type="text"]:hover,
+.search-container input[type="text"]:focus {
+  border-bottom: 2px solid #4caf50;
+}
+
+/* Style the submit button on hover */
+.search-container button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

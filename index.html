@@ -15,37 +15,73 @@
   <body>
     <div class="container">
       <div class="sidebar">
-        <div class="top-sidebar">
-          <i class="fa-solid fa-gauge"></i>
-          <p>Dashboard</p>
+        <div class="dashboard-sidebar">
+          <i class="fa-solid fa-gauge dashboard"></i>
+          <p class="dashboard-text">Dashboard</p>
         </div>
 
         <div class="middle-sidebar">
-          <div class="side-content">Home</div>
-          <div class="side-content">Profile</div>
-          <div class="side-content">Messages</div>
-          <div class="side-content">History</div>
-          <div class="side-content">Tasks</div>
-          <div class="side-content">Communities</div>
+          <div class="top-sidebar">
+            <i class="fa-sharp fa-solid fa-house"></i>
+            <div class="side-content">Home</div>
+          </div>
+          <div class="top-sidebar">
+            <i class="fa-solid fa-user"></i>
+            <div class="side-content">Profile</div>
+          </div>
+          <div class="top-sidebar">
+            <i class="fa-solid fa-message"></i>
+            <div class="side-content">Messages</div>
+          </div>
+          <div class="top-sidebar">
+            <i class="fa-solid fa-clock"></i>
+            <div class="side-content">History</div>
+          </div>
+          <div class="top-sidebar">
+            <i class="fa-solid fa-list-check"></i>
+            <div class="side-content">Tasks</div>
+          </div>
+          <div class="top-sidebar">
+            <i class="fa-solid fa-person"></i>
+            <div class="side-content">Communities</div>
+          </div>
         </div>
 
         <div class="lower-sidebar">
-          <div class="side-content">Setting</div>
-          <div class="side-content">Profile</div>
-          <div class="side-content">Messages</div>
+          <div class="top-sidebar">
+            <i class="fa-solid fa-gear"></i>
+            <div class="side-content">Setting</div>
+          </div>
+          <div class="top-sidebar">
+            <i class="fa-solid fa-question"></i>
+            <div class="side-content">Profile</div>
+          </div>
+          <div class="top-sidebar">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div class="side-content">Privacy</div>
+          </div>
         </div>
       </div>
 
       <div class="header">
         <div class="top-header">
-          <input type="text" placeholder="Search.." />
-          <i class="fa-solid fa-gauge"></i>
-          <i class="fa-solid fa-gauge"></i>
-          <div class="name">Some Cat</div>
+          <div class="search-container">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input class="search-bar" type="text" placeholder="Search.." />
+          </div>
+          <div class="icon-container">
+            <i class="fa-solid fa-bell"></i>
+            <img class="small-icon" src="images/icon.png" alt="Profile icon" />
+            <div class="name">Some Cat</div>
+          </div>
         </div>
         <div class="bottom-header">
           <div class="left-botton-header">
-            <i class="fa-solid fa-gauge"></i>
+            <img
+              class="profile-icon"
+              src="images/icon.png"
+              alt="Profile icon"
+            />
             <div>Hi there,</div>
             <div>Some Cat(@randomCat)</div>
           </div>

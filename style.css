@@ -3,6 +3,8 @@
 :root {
   --shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   --main-grey: #e7e5e4;
+  --text-size: 1.2rem;
+  --main-color: #acd7ec;
 }
 
 * {
@@ -37,13 +39,13 @@ i {
   height: 100vh;
   display: grid;
   grid-template-columns: 350px 1fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 200px 1fr;
 }
 
 /*Sidebar css*/
 
 .sidebar {
-  background-color: #0072b5;
+  background-color: var(--main-color);
   display: grid;
   grid-template-rows: repeat(auto-fit, 100px 350px 300px);
   align-items: start;
@@ -51,7 +53,7 @@ i {
   grid-row: 1/5;
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
+  color: black;
 }
 
 .dashboard-sidebar {
@@ -85,6 +87,7 @@ i {
   box-shadow: var(--shadow);
   font-size: 20px;
   font-weight: bold;
+  grid-template-rows: 100px 100px;
 }
 
 .top-header {
@@ -93,7 +96,6 @@ i {
   justify-content: space-evenly;
   padding: 24px;
   gap: 24px;
-  height: 100px;
 }
 
 /* Style the search bar container */
@@ -176,12 +178,12 @@ i {
 /* CSS */
 .header-button {
   appearance: button;
-  background-color: #0276ff;
+  background-color: var(--main-color);
   border-radius: 8px;
   border-style: none;
   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
   box-sizing: border-box;
-  color: #fff;
+  color: black;
   cursor: pointer;
   font-size: 100%;
   line-height: 1.15;
@@ -194,12 +196,56 @@ i {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  box-shadow: var(--shadow);
 }
 
 .header-button:active {
   background-color: #006ae8;
+  color: white;
 }
 
 .header-button:hover {
   background-color: #1c84ff;
+  color: white;
+}
+
+.board-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr;
+  font-size: var(--text-size);
+  padding: 24px;
+  gap: 24px;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column: 1/3;
+  gap: 24px;
+}
+
+.your-project {
+  margin-top: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-left: 12px solid;
+  border-left-color: #8b95c9;
+  border-radius: 3%;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  gap: 8px;
+}
+
+.article-icon {
+  display: flex;
+  margin-top: auto;
+  align-self: flex-end;
+  justify-content: flex-end;
+  gap: 1.5rem;
 }
